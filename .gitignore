@@ -1,0 +1,9 @@
+node_modules/
+uploads/
+output/
+.DS_Store
+.bolt/
+.vscode/
+package-lock.json
+pdf-examples/*.pdf
+!pdf-examples/sequence.csv

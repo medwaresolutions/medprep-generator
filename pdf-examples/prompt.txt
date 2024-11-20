@@ -1,0 +1,19 @@
+build an app to be used by gastroenterology medical clinics. 
+the purpose of the app is to convert instructions on a pdf to a csv file. 
+this sequence.csv is the output structure required, it is also used to populate another app which has already been developed and expects the csv in a particular format, see attached csv file. The headings must match the headings in the example csv files attached. the steps should be similar to the examples provided in the sequence.csv.
+
+I have attached 5 pdf files from different clinics located in the pdf-examples folder and i have attache one to this chat. 
+the format of each pdf is different for every clinic. 
+the pdf files provide instructions for patients preparing for a colonoscopy and they have the following in common:
+- pdf usually is created for a single bowel prep ( for example - Plenvu)
+-each set of instruction are based around whether the colonoscopy is preformed before 12pm or after 12pm,  morning colonoscopy = morning or afternoon = afternoon
+- instructions will have information for each step.
+- steps have an order ( first step is 1. usually around 10 steps)
+- each step has the number of days prior to the colonoscopy the step is performed  usually ranges from 7 days before to the day of colonoscopy ( column called days where 7days before='-7' and  day of colonoscopy='0')
+- steps may have a time associated with them.
+- the instructions may refer to a split dose ( if split = true)
+- csv has a column called 'category' . there are 4 categories as follows:
+-medication = medications information that is not 'bowelprep medication' ( for example - blood thinners, blood pressure medication), 
+-bowelprep ( this relates specifically to medication used to prepare patients bowel for the colonoscopy, for example-moviprep,glycoprep,prepkitc), 
+- diet = information about what to eat
+- procedure = information about colonoscopy
